@@ -1,8 +1,16 @@
 import "../assets/css/footer.css";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaTwitter,
+  FaFacebookF,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer"  >
+    <footer className="footer">
       <div className="footer-container">
 
         {/* ABOUT */}
@@ -43,24 +51,22 @@ const Footer = () => {
         <div className="footer-box">
           <h3>Have a Questions?</h3>
           <ul className="footer-contact">
-            <li>📍 203 Fake St. Mountain View, San Francisco, California, USA</li>
-            <li>📞 +2 392 3929 210</li>
-            <li>✉️ info@yourdomain.com</li>
+            <li><FaMapMarkerAlt /> 203 Fake St. Mountain View, San Francisco, California, USA</li>
+            <li><FaPhoneAlt /> +2 392 3929 210</li>
+            <li><FaEnvelope /> info@yourdomain.com</li>
           </ul>
 
           <div className="footer-socials">
-            <span>🐦</span>
-            <span>📘</span>
-            <span>📸</span>
+            <span><FaTwitter /></span>
+            <span><FaFacebookF /></span>
+            <span><FaInstagram /></span>
           </div>
         </div>
 
       </div>
 
       <div className="footer-bottom">
-        <p>
-          ©2026 All rights reserved 
-        </p>
+        <p>©2026 All rights reserved</p>
       </div>
     </footer>
   );

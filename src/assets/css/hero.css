@@ -3,7 +3,10 @@
 ========================= */
 .hero {
   padding-top: 80px;
-  background: #ebe9d865;
+  body {
+ background: #b1b493;
+}
+
 }
 
 .hero-container {

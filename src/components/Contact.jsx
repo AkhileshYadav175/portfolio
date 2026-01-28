@@ -1,5 +1,11 @@
 import { useState } from "react";
 import "../assets/css/contact.css";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaGlobe,
+} from "react-icons/fa";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -75,7 +81,7 @@ const Contact = () => {
         {/* INFO */}
         <div className="contact-info">
           <div className="info-box">
-            <span>📍</span>
+            <span><FaMapMarkerAlt /></span>
             <p>
               <strong>Address:</strong><br />
               198 West 21th Street, Suite 721 New York NY 10016
@@ -83,21 +89,21 @@ const Contact = () => {
           </div>
 
           <div className="info-box">
-            <span>📞</span>
+            <span><FaPhoneAlt /></span>
             <p>
               <strong>Phone:</strong><br />+1235 2355 98
             </p>
           </div>
 
           <div className="info-box">
-            <span>✉️</span>
+            <span><FaEnvelope /></span>
             <p>
               <strong>Email:</strong><br />info@yoursite.com
             </p>
           </div>
 
           <div className="info-box">
-            <span>🌐</span>
+            <span><FaGlobe /></span>
             <p>
               <strong>Website:</strong><br />yoursite.com
             </p>
