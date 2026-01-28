@@ -21,7 +21,7 @@ const statsData = [
   },
   {
     icon: <FaChartLine />,
-    number: 780,
+    number: 6,
     label: "YEARS EXPERIENCED",
   },
 ];

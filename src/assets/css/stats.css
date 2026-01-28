@@ -72,14 +72,14 @@
 /* Tablet */
 @media (max-width: 991px) {
   .stats-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
   }
 }
 
-/* Mobile */
 @media (max-width: 576px) {
   .stats-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2 box ek row me */
+    gap: 20px;
   }
 
   .stat-item {
@@ -93,10 +93,11 @@
 
   .stat-number {
     margin-left: 0;
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
   .stat-label {
     margin-top: 0;
+    font-size: 13px;
   }
 }
