@@ -24,46 +24,50 @@
 
 /* CONTENT */
 .about-subtitle {
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 2px;
   color: #b5b890;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .about-title {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 900;
   margin: 10px 0 20px;
 }
 
 .about-text {
-  color: #888;
+  color: #777;
   line-height: 1.8;
   margin-bottom: 30px;
   font-size: 15px;
 }
 
 /* =====================
-   INFO LIST (FIXED)
+   INFO LIST (Clyde Style)
 ===================== */
 .about-info {
   list-style: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .about-info li {
-  display: flex;                 /* ⭐ KEY FIX */
+  display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 16px;
-  margin-bottom: 12px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .about-info strong {
-  min-width: 120px;              /* label width fixed */
+  min-width: 130px;
   font-weight: 700;
-  color: #000;
+  color: #111;
+}
+
+.about-info span {
+  color: #b5b890;
 }
 
 /* =====================
@@ -71,7 +75,7 @@
 ===================== */
 .about-interests {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -79,7 +83,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -88,28 +92,16 @@
 }
 
 /* =====================
-   RESPONSIVE
+   RESPONSIVE (Mobile like SS)
 ===================== */
 @media (max-width: 991px) {
   .about-container {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: left;
   }
 
   .about-image img {
-    margin: auto;
-  }
-
-  .about-info li {
-    justify-content: center;     /* ⭐ CENTER but SAME LINE */
-  }
-
-  .about-info strong {
-    text-align: right;
-  }
-
-  .about-interests {
-    justify-content: center;
+    margin: 0 auto 30px;
   }
 }
 
@@ -119,6 +111,10 @@
   }
 
   .about-info li {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .about-info strong {
+    min-width: 110px;
   }
 }

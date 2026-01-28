@@ -72,32 +72,32 @@
 /* Tablet */
 @media (max-width: 991px) {
   .stats-container {
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Mobile — EXACT Clyde Look */
 @media (max-width: 576px) {
   .stats-container {
-    grid-template-columns: repeat(2, 1fr); /* ✅ 2 box ek row me */
-    gap: 20px;
+    grid-template-columns: 1fr;   /* ✅ ONE ITEM PER ROW */
+    gap: 30px;
   }
 
   .stat-item {
-    flex-direction: column;
-    text-align: center;
+    justify-content: flex-start;  /* icon left */
   }
 
   .stat-icon {
-    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
   }
 
   .stat-number {
-    margin-left: 0;
-    line-height: 1.3;
+    font-size: 26px;
   }
 
   .stat-label {
-    margin-top: 0;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
