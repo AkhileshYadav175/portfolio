@@ -1,0 +1,145 @@
+.services-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Styling */
+.services-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sub-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #b1b493;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #999;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
+}
+
+/* Card Styling */
+.service-card {
+  background: #fff;
+  padding: 50px 30px 40px;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin-top: 35px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* Icon Movement logic */
+.icon-wrapper {
+  position: absolute;
+  top: -35px;
+  left: 30px; /* Base position */
+  transition: all 0.4s ease;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background: #b1b493;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 10px 20px rgba(177, 180, 147, 0.2);
+  transition: all 0.4s ease;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.6;
+}
+
+/* Active/Hover State */
+.service-card.active {
+  background-color: #b1b493;
+}
+
+.service-card.active h3,
+.service-card.active p {
+  color: #fff;
+}
+
+/* Icon Right Move Effect */
+.service-card.active .icon-wrapper {
+  left: 45px; /* Slide to right when active */
+}
+
+.service-card.active .icon-circle {
+  background-color: #fff;
+  color: #b1b493;
+}
+
+/* =========================
+   RESPONSIVE - SERVICES
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 40px 20px 30px;
+  }
+
+  .icon-wrapper {
+    left: 20px;
+  }
+}

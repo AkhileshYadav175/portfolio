@@ -1,0 +1,8 @@
+/* FIX: fixed navbar ke niche section chup raha tha */
+section {
+  scroll-margin-top: 100px; /* header height (90px) + gap */
+}
+
+html {
+  scroll-behavior: smooth;
+}

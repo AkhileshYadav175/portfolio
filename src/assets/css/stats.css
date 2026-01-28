@@ -1,0 +1,102 @@
+/* =========================
+   STATS SECTION
+========================= */
+.skill-stats {
+  padding: 80px 20px;
+  background: #e8e9e06d;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;  /* ⭐ IMPORTANT */
+}
+
+/* =========================
+   SINGLE STAT ITEM
+========================= */
+.stat-item {
+  display: flex;
+  align-items: center;   /* ⭐ IMPORTANT */
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ICON */
+.stat-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #bcc091;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  flex-shrink: 0;
+  margin-bottom: -50px;
+}
+
+/* CONTENT */
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 30px;
+  font-weight: 800;
+  color: #333;
+  line-height: 3;
+  margin-left: -12px;
+}
+
+.stat-label {
+  margin-top: -53px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #bcc091;
+  text-transform: uppercase;
+}
+
+/* =========================
+   RESPONSIVE - STATS
+========================= */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat-icon {
+    margin-bottom: 10px;
+  }
+
+  .stat-number {
+    margin-left: 0;
+    line-height: 1.4;
+  }
+
+  .stat-label {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,236 @@
+/* GLOBAL SETTINGS */
+.main-project-container {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+/* ================= CONTACT CTA ================= */
+.contact-cta-section {
+  padding: 100px 0 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.contact-cta-section .contact-wrapper {
+  background: #b1b493;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.contact-text-content {
+  flex: 1;
+  color: #fff;
+  z-index: 2;
+}
+
+.contact-heading {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  
+}
+
+.contact-description {
+  font-size: 15px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  max-width: 450px;
+  
+}
+
+.contact-btn {
+  background: #fff;
+  color: #b1b493;
+  border: none;
+  padding: 14px 35px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.contact-image-box {
+  position: relative;
+  flex: 0.8;
+}
+
+.contact-image-box img {
+  position: absolute;
+  right: -30px;
+  bottom: -190px;
+  height: 380px;
+
+  
+}
+
+
+
+/* =========================
+   TESTIMONIALS SECTION
+========================= */
+.testimonials-section {
+  background: #b1b493;
+  padding: 100px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* TOP TEXT */
+.testi-tag {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.testi-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.testi-desc {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================
+   SLIDER
+========================= */
+.testi-slider {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.testi-track {
+  display: flex;
+  transition: transform 0.9s ease;
+}
+
+/* =========================
+   CARD
+========================= */
+.testi-box {
+  flex: 0 0 33.33%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 40px;
+  text-align: left;
+  border: 15px solid #b1b493;
+}
+
+/* QUOTE */
+.quote-icon {
+  font-size: 40px;
+  color: #b1b493;
+  line-height: 1;
+}
+
+/* TEXT */
+.testi-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #777;
+  margin: 20px 0 30px;
+}
+
+/* CLIENT */
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.client-name {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.client-role {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* =========================
+   DOTS
+========================= */
+.testi-dots {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testi-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.testi-dot.active {
+  background: #fff;
+  transform: scale(1.2);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .testi-box {
+    flex: 0 0 50%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 80px 15px;
+  }
+
+  .testi-title {
+    font-size: 28px;
+  }
+  .contact-image-box img {
+      position: absolute;
+    right: -243px;
+    bottom: -58px;
+    height: 290px;
+}
+
+
+  .testi-box {
+    flex: 0 0 100%;
+    padding: 30px;
+    border: 10px solid #b1b493;
+  }
+}

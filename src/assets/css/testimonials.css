@@ -1,0 +1,153 @@
+.testimonials-section {
+  background: #b1b493;
+  padding: 100px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.testi-tag {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.testi-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.testi-desc {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+}
+
+.testi-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.testi-track {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
+
+/* CARD SETTINGS */
+.testi-box {
+  min-width: 33.333%; /* Desktop par 3 dikhenge */
+  padding: 0 15px; /* Spacing between cards */
+  box-sizing: border-box;
+}
+
+/* Inner content for white card look */
+.testi-box {
+  background: #fff;
+  border-radius: 5px;
+  padding: 40px;
+  text-align: left;
+  /* Adjusting for gap */
+  flex: 0 0 33.333%; 
+  border: 15px solid #b1b493; /* Creating gap using border trick for smooth sliding */
+}
+
+.quote-icon {
+  font-size: 40px;
+  color: #b1b493;
+  line-height: 1;
+}
+
+.testi-text {
+  color: #777;
+  font-size: 15px;
+  margin: 20px 0 30px;
+  line-height: 1.7;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.client-name {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.client-role {
+  font-size: 13px;
+  color: #bbb;
+}
+
+/* DOTS */
+.testi-dots {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testi-dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.testi-dot.active {
+  background: #fff;
+  transform: scale(1.2);
+}
+
+/* =========================
+   RESPONSIVE - TESTIMONIALS
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .testi-box {
+    flex: 0 0 50%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 80px 15px;
+  }
+
+  .testi-title {
+    font-size: 28px;
+  }
+
+  .testi-box {
+    flex: 0 0 100%;
+    padding: 30px;
+    border: 10px solid #b1b493;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+  .testi-desc {
+    font-size: 14px;
+  }
+}
