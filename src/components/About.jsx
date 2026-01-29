@@ -1,6 +1,6 @@
 import "../assets/css/about.css";
 import aboutImage from "../assets/images/about.png";
-import { FaMusic, FaPlane, FaFilm, FaFootballBall } from "react-icons/fa";
+import { FaPaintBrush, FaCode, FaRocket, FaBolt } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
         
         {/* LEFT IMAGE */}
         <div className="about-image">
-          <img src={aboutImage} alt="about" />
+          <img src={aboutImage} alt="About Daljeet Singh" />
         </div>
 
         {/* RIGHT CONTENT */}
@@ -18,26 +18,36 @@ const About = () => {
           <h2 className="about-title">About Me</h2>
 
           <p className="about-text">
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia. It is a paradisematic country, in which
-            roasted parts of sentences fly into your mouth.
+            I am a Full Stack Web Developer with over 7+ years of professional
+            experience in designing and developing high-quality websites and web
+            applications.
+            <br /><br />
+            I specialize in WordPress, Shopify, Webflow, and custom front-end
+            development using HTML, CSS, JavaScript, React, and PHP. My focus is
+            always on clean code, performance, mobile responsiveness, and
+            user-friendly design.
+            <br /><br />
+            I have worked with startups, agencies, and business owners to turn
+            ideas into scalable digital solutions. I believe in long-term
+            collaboration, clear communication, and delivering work that helps
+            businesses grow.
           </p>
 
+          {/* INFO LIST */}
           <ul className="about-info">
-            <li><strong>Name:</strong> Clyde Nowitzki</li>
-            <li><strong>Date of birth:</strong> January 01, 1990</li>
-            <li><strong>Address:</strong> San Francisco CA 97987 USA</li>
-            <li><strong>Zip code:</strong> 1000</li>
-            <li><strong>Email:</strong> clydenowitzki@gmail.com</li>
-            <li><strong>Phone:</strong> +1-2234-5678-9-0</li>
+            <li><strong>Name:</strong> Daljeet Singh</li>
+            <li><strong>Address:</strong> Chandigarh, India</li>
+            <li><strong>Experience:</strong> 7+ Years Professional</li>
+            <li><strong>Email:</strong> daljeetsingh241@gmail.com</li>
+            <li><strong>Phone:</strong> +91 9996727653 / +91 9034527653</li>
           </ul>
 
-          {/* INTERESTS */}
+          {/* INTERESTS / EXPERTISE */}
           <div className="about-interests">
-            <div><FaMusic /> Music</div>
-            <div><FaPlane /> Travel</div>
-            <div><FaFilm /> Movie</div>
-            <div><FaFootballBall /> Sports</div>
+            <div><FaPaintBrush /> UI / UX Design</div>
+            <div><FaCode /> Web Development</div>
+            <div><FaRocket /> Learning New Technologies</div>
+            <div><FaBolt /> Performance Optimization</div>
           </div>
         </div>
 

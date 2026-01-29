@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header className="header">
       <div className="header-inner">
-        <div className="logo">Akhil</div>
+        <div className="logo">Daljeet Singh</div>
 
         {/* Hamburger Icon */}
         <div

@@ -10,11 +10,11 @@ const Project = () => {
         <div className="contact-container">
           <div className="contact-wrapper">
             <div className="contact-text-content">
-              <h2 className="contact-heading">Have a project on your mind.</h2>
+              <h2 className="contact-heading">Have a project in mind? Let’s build it together.</h2>
               <p className="contact-description">
-                A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                I help businesses and startups build fast, scalable, and conversion-focused websites — from full-stack development to ongoing maintenance and support.
               </p>
-              <button className="contact-btn">Contact me</button>
+              <button className="contact-btn">Let’s Talk</button>
             </div>
             <div className="contact-image-box">
               <img src={authorImg} alt="Author" />

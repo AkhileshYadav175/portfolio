@@ -1,17 +1,17 @@
-/* ===== SECTION ===== */
+/* =========================
+   SKILLS SECTION
+========================= */
 .skills-section {
   width: 100%;
   padding: 100px 0;
   background: #fff;
   text-align: center;
-  
 }
 
 /* ===== HEADER ===== */
 .skills-header {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto 80px;
-  
 }
 
 .skills-subtitle {
@@ -26,57 +26,56 @@
 .skills-header h2 {
   font-size: 42px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: #000;
 }
 
 .skills-header p {
-  font-size: 22px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.8;
   color: #999;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* ===== GRID ===== */
+/* =========================
+   GRID (⭐ MAIN FIX HERE)
+========================= */
 .skills-grid {
-  max-width: 1220px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
- 
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* ✅ 4 BOXES DESKTOP */
   gap: 30px;
 }
 
 /* ===== CARD ===== */
 .skill-card {
-  background: #ebeaea3b;
-  padding: 5px 5px;
-  border-radius: 6px;
-  box-shadow: 0 0 0px black;
-  transition: all 0.5s ease;
+  background: #f9f9f7;
+  padding: 35px 25px 30px;
+  border-radius: 8px;
+  transition: all 0.4s ease;
 }
 
 .skill-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
 }
 
 .skill-card h4 {
   font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 0px;
+  font-weight: 600;
+  margin-bottom: 20px;
   color: #000;
 }
 
 /* ===== CIRCLE ===== */
 .circle {
-  width: 170px;
-  height: 170px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   margin: 0 auto 25px;
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,7 +84,7 @@
 .circle::after {
   content: "";
   position: absolute;
-  inset: 6px;
+  inset: 8px;
   background: #fff;
   border-radius: 50%;
 }
@@ -93,7 +92,7 @@
 .circle span {
   position: relative;
   z-index: 2;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
   color: #000;
 }
@@ -103,7 +102,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 18px;
   border-top: 1px solid #eee;
 }
 
@@ -113,37 +112,37 @@
 
 .stats strong {
   display: block;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   color: #b5b58e;
 }
 
 .stats span {
-  font-size: 15px;
+  font-size: 13px;
   color: #999;
 }
 
 .stats .line {
   width: 1px;
-  height: 35px;
+  height: 32px;
   background: #eee;
 }
 
 /* =========================
-   RESPONSIVE - SKILLS
+   RESPONSIVE
 ========================= */
 
 /* Tablet */
 @media (max-width: 1024px) {
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2 BOXES */
   }
 }
 
 /* Mobile */
 @media (max-width: 640px) {
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* ✅ 1 BOX */
   }
 
   .skills-header h2 {
@@ -151,11 +150,11 @@
   }
 
   .circle {
-    width: 140px;
-    height: 140px;
+    width: 135px;
+    height: 135px;
   }
 
-  .stats strong {
+  .circle span {
     font-size: 22px;
   }
 }

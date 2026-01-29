@@ -45,7 +45,7 @@
 .project-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(177, 180, 147, 0.9);
+  background: #1b98e01f;
   display: flex;
   align-items: center;
   justify-content: center;

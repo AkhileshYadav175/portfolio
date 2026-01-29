@@ -1,6 +1,4 @@
-/* =========================
-   STATS SECTION
-========================= */
+/* ========================= STATS SECTION ========================= */
 .skill-stats {
   padding: 80px 20px;
   background: #98989827;
@@ -14,15 +12,15 @@
   gap: 30px;
   /* display: flex; */
   flex-direction: column;
-  justify-content: center;  /* ⭐ IMPORTANT */
+  justify-content: center;
+  /* ⭐ IMPORTANT */
 }
 
-/* =========================
-   SINGLE STAT ITEM
-========================= */
+/* ========================= SINGLE STAT ITEM ========================= */
 .stat-item {
   display: flex;
-  align-items: center;   /* ⭐ IMPORTANT */
+  align-items: center;
+  /* ⭐ IMPORTANT */
   justify-content: center;
   gap: 20px;
 }
@@ -65,10 +63,7 @@
   text-transform: uppercase;
 }
 
-/* =========================
-   RESPONSIVE - STATS
-========================= */
-
+/* ========================= RESPONSIVE - STATS ========================= */
 /* Tablet */
 @media (max-width: 991px) {
   .stats-container {
@@ -79,12 +74,14 @@
 /* Mobile — EXACT Clyde Look */
 @media (max-width: 576px) {
   .stats-container {
-    grid-template-columns: 1fr;   /* ✅ ONE ITEM PER ROW */
+    grid-template-columns: 1fr;
+    /* ✅ ONE ITEM PER ROW */
     gap: 30px;
   }
 
   .stat-item {
-    justify-content: flex-start;  /* icon left */
+    justify-content: flex-start;
+    /* icon left */
   }
 
   .stat-icon {

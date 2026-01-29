@@ -87,12 +87,13 @@
   background: #b5b58e;
   color: #fff;
   border: none;
-  padding: 15px 42px;
+  padding: 10px 32px;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   border-radius: 6px;
   transition: 0.3s;
+  margin-right: 0;
   
 }
 

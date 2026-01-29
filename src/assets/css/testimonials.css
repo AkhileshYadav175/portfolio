@@ -50,14 +50,21 @@
 
 /* Inner content for white card look */
 .testi-box {
+  flex: 0 0 33.333%;
   background: #fff;
   border-radius: 5px;
   padding: 40px;
   text-align: left;
-  /* Adjusting for gap */
-  flex: 0 0 33.333%; 
-  border: 15px solid #b1b493; /* Creating gap using border trick for smooth sliding */
+  box-sizing: border-box;
+  border: 15px solid #b1b493;
 }
+.rating {
+  font-size: 13px;
+  font-weight: 700;
+  color: #b1b493;
+  margin: 10px 0;
+}
+
 
 .quote-icon {
   font-size: 40px;

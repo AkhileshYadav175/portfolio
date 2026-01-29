@@ -10,9 +10,9 @@ import work7 from "../assets/images/work-7.jpg";
 import work8 from "../assets/images/work-8.jpg";
 
 const projects = [
-  { id: 1, title: "Business Growth", img: work1 },
-  { id: 2, title: "Team Work", img: work2 },
-  { id: 3, title: "Market Analysis", img: work3 },
+  { id: 1, title: "Business Analytics Dashboard", img: work1 },
+  { id: 2, title: "Custom Web Application for Teams", img: work2 },
+  { id: 3, title: "Market Research & Reporting Tool", img: work3 },
   { id: 4, title: "Creative Thinking", img: work4 },
   { id: 5, title: "Social Media", img: work5 },
   { id: 6, title: "Marketing Strategy", img: work6 },

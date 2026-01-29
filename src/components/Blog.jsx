@@ -12,7 +12,7 @@ const blogs = [
     date: "July 03, 2020",
     author: "Admin",
     comments: 3,
-    title: "Why Lead Generation is Key for Business Growth",
+    title: "How to Optimize WordPress Websites for Speed & Performance",
   },
   {
     id: 2,
@@ -36,10 +36,11 @@ const Blog = () => {
   return (
     <section className="blog-section" id="blog">
       <span className="blog-tag">BLOG</span>
-      <h2 className="blog-title">Our Blog</h2>
+      <h2 className="blog-title">Insights & Articles</h2>
       <p className="blog-desc">
-        Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia
+        Practical insights on WordPress, full-stack development, performance optimization,
+SEO, and building scalable, high-performing websites.
+
       </p>
 
       <div className="blog-grid">
@@ -59,8 +60,9 @@ const Blog = () => {
               </Link>
 
               <p>
-                A small river named Duden flows by their place and supplies it
-                with the necessary regelialia.
+                Key techniques I use to improve loading speed, Core Web Vitals,
+and overall performance for WordPress sites.
+
               </p>
             </div>
           </div>

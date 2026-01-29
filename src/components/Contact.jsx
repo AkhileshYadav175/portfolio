@@ -33,11 +33,14 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-section">
-      <span className="contact-tag">CONTACT US</span>
-      <h2 className="contact-title">Have a Project?</h2>
+      <span className="contact-tag">CONTACT ME</span>
+      <h2 className="contact-title">Have a Project in Mind?</h2>
       <p className="contact-desc">
-        Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia
+       Looking for a reliable WordPress or full-stack developer?
+I help businesses build, optimize, and maintain high-performing websites with a strong focus on performance, security, and scalability.
+Let’s discuss your project and see how I can help.
+
+
       </p>
 
       <div className="contact-wrapper">
@@ -84,21 +87,21 @@ const Contact = () => {
             <span><FaMapMarkerAlt /></span>
             <p>
               <strong>Address:</strong><br />
-              198 West 21th Street, Suite 721 New York NY 10016
+              Chandigarh
             </p>
           </div>
 
           <div className="info-box">
             <span><FaPhoneAlt /></span>
             <p>
-              <strong>Phone:</strong><br />+1235 2355 98
+              <strong>Phone:</strong><br />+91 9996727653  +91 9034527653
             </p>
           </div>
 
           <div className="info-box">
             <span><FaEnvelope /></span>
             <p>
-              <strong>Email:</strong><br />info@yoursite.com
+              <strong>Email:</strong><br />daljeetsingh241@gmail.com
             </p>
           </div>
 

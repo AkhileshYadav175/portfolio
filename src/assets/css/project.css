@@ -67,7 +67,7 @@
 .contact-image-box img {
   position: absolute;
   right: -30px;
-  bottom: -190px;
+  bottom: -210px;
   height: 380px;
 
   
@@ -222,7 +222,7 @@
   }
   .contact-image-box img {
       position: absolute;
-    right: -243px;
+    right: -174px;
     bottom: -58px;
     height: 290px;
 }
